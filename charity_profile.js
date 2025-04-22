@@ -6,16 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     form.style.display = "block";
     button.style.display = "none";
   });
-});
 
-const image = document.getElementById("charityImg");
-const extraInfo = document.getElementById("extraInfo");
+  const image = document.getElementById("charityImg");
+  const extraInfo = document.getElementById("extraInfo");
 
-image.addEventListener("mouseenter", () => {
-  extaInfo.style.display = "block";
-});
+  image.addEventListener("mouseenter", () => {
+    extraInfo.style.display = "block";
+  });
 
-image.addEventListener("mouseleave", () => {
-  extraInfo.style.display = "none";
-});
-                       
+  image.addEventListener("mouseleave", () => {
+    extraInfo.style.display = "none";
+  });
+});                       
