@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const quoteAuthor = document.getElementById("quoteAuthor");
 
   loadQuoteBtn.addEventListener("click", () => {
-    fetch("https://api.quotable.io/random")
+    fetch("https://quoteslate.vercel.app/api/quotes/random")
     .then(response => response.json())
     .then(data => {
       quoteText.textContent = `"${data.content}"`;
