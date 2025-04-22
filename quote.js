@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(response => response.json())
     .then(data => {
       quoteText.textContent = `"${data.text}"`;
-      quoteAuthor.textContent = `- ${data.author || "Unknown"}`;
+      quoteAuthor.textContent = `- ${quoteBody?.author || "Unknown"}`;
     })
     .catch(error => {
       quoteText.textContent = "An error occurred while fetching the quote.";
