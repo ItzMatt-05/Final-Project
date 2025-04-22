@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const quoteAuthor = document.getElementById("quoteAuthor");
 
   loadQuoteBtn.addEventListener("click", () => {
-    fetch("https://quoteslate.vercel.app/api/quotes/random")
+    fetch("https://dummyjson.com/quotes/random")
     .then(response => response.json())
     .then(data => {
-      quoteText.textContent = `"${data.text}"`;
-      quoteAuthor.textContent = `- ${quoteBody?.author || "Unknown"}`;
+      quoteText.textContent = `"${data.quote}"`;
+      quoteAuthor.textContent = `- ${data.author}`;
     })
     .catch(error => {
       quoteText.textContent = "An error occurred while fetching the quote.";
