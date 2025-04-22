@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("https://quoteslate.vercel.app/api/quotes/random")
     .then(response => response.json())
     .then(data => {
-      quoteText.textContent = `"${data.quote.text}"`;
-      quoteAuthor.textContent = `- ${data.quote.author || "Unknown"}`;
+      quoteText.textContent = `"${data.text}"`;
+      quoteAuthor.textContent = `- ${data.author || "Unknown"}`;
     })
     .catch(error => {
       quoteText.textContent = "An error occurred while fetching the quote.";
