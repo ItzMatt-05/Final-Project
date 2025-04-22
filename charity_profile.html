@@ -18,12 +18,15 @@
   <main>
     <section>
       <h2>Wells for Life - Clean Water Initiative</h2>
-      <img src="https://t3.ftcdn.net/jpg/03/10/40/70/240_F_310407095_lFjpixbZStsIzniox3VmSXSXkfVdZUVA.jpg" alt="Charity Image">
-      <p>Wells for Life is dedicated to building clean water systems in underserved communities to ensure clean water is readily available to as many people as possible.</p>
+      <img id="charityImg" src="https://t3.ftcdn.net/jpg/03/10/40/70/240_F_310407095_lFjpixbZStsIzniox3VmSXSXkfVdZUVA.jpg" alt="Charity Image">
+      <p id="extraInfo" style="display: none;">Wells for Life is dedicated to building clean water systems in underserved communities to ensure clean water is readily available to as many people as possible.</p>
     </section>
 
     <section>
       <h3>Contact / Donate</h3>
+      <button id="volunteerBtn">Volunteer Now</button>
+      
+      <div id="volunteerForm" style="display: none;">
       <form>
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br><br>
@@ -36,11 +39,14 @@
 
         <input type="submit" value="Send">
       </form>
-    </section>
-  </main>
+     </div>
+   </section>
+ </main>
 
   <footer>
     <p>© 2025 HelpHub</p>
   </footer>
-</body>
-</html>
+
+  <script src="charity_profile.js"></script>
+  </body>
+  </html>
